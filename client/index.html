@@ -15,11 +15,6 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
@@ -46,7 +41,7 @@
             id="input"
             aria-describedby="eth-addon"
             placeholder="0.00"
-            autoComplete="off"
+            autocomplete="off"
             autoCorrect="off"
             required
           />
@@ -73,7 +68,8 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Select <br> Token
+            Select <br />
+            Token
           </button>
           <ul class="dropdown-menu w-30">
             <li>
@@ -96,7 +92,8 @@
         <div id="rate-box">
           <span class="rate text">Exchange Rate</span>
           <span class="rate value">
-            1 <span id="top-text">ETH</span> = <span id="rate-value">3000</span><span id="bottom-text"> DAI</span>
+            1 <span id="top-text">ETH</span> = <span id="rate-value">3000</span
+            ><span id="bottom-text"> DAI</span>
           </span>
         </div>
         <button type="submit" class="btn btn-primary swap disabled">
