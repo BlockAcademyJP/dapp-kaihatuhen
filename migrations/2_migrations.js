@@ -17,7 +17,7 @@ module.exports = async function (deployer){
   await deployer.deploy(Dex, [dai.address, link.address, comp.address]);
   const dex = await Dex.deployed();
 
-  // await dai.transfer(dex.address, toWei(10**10));
-  // await link.transfer(dex.address, toWei(10**6));
-  // await comp.transfer(dex.address, toWei(10**4));
+  await dai.transfer(dex.address, toWei(10**10));
+  await link.transfer(dex.address, toWei(10**6));
+  await comp.transfer(dex.address, toWei(10**4));
 }
